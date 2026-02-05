@@ -1,0 +1,81 @@
+@import "tailwindcss";
+@import "@xyflow/react/dist/style.css";
+
+:root {
+  --qnt-bg: #0f0f17;
+  --qnt-surface: #1a1a2e;
+  --qnt-surface-hover: #22223a;
+  --qnt-border: #2d2d4a;
+  --qnt-border-bright: #4a4a7a;
+  --qnt-accent: #7c5cfc;
+  --qnt-accent-light: #9d84fd;
+  --qnt-accent-dim: #5a3fd4;
+  --qnt-text: #e4e4f0;
+  --qnt-text-dim: #8888a8;
+  --qnt-green: #4ade80;
+  --qnt-blue: #60a5fa;
+  --qnt-orange: #fb923c;
+  --qnt-pink: #f472b6;
+  --qnt-red: #f87171;
+  --qnt-yellow: #facc15;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: var(--qnt-bg);
+  color: var(--qnt-text);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* React Flow overrides */
+.react-flow__background {
+  background: var(--qnt-bg) !important;
+}
+
+.react-flow__minimap {
+  background: var(--qnt-surface) !important;
+  border: 1px solid var(--qnt-border) !important;
+  border-radius: 8px !important;
+}
+
+.react-flow__controls {
+  border: 1px solid var(--qnt-border) !important;
+  border-radius: 8px !important;
+  overflow: hidden;
+}
+
+.react-flow__controls button {
+  background: var(--qnt-surface) !important;
+  color: var(--qnt-text) !important;
+  border-color: var(--qnt-border) !important;
+  width: 32px !important;
+  height: 32px !important;
+}
+
+.react-flow__controls button:hover {
+  background: var(--qnt-surface-hover) !important;
+}
+
+.react-flow__controls button svg {
+  fill: var(--qnt-text-dim) !important;
+}
+
+.react-flow__edge-path {
+  stroke: var(--qnt-border-bright) !important;
+  stroke-width: 2 !important;
+}
+
+.react-flow__handle {
+  background: var(--qnt-accent) !important;
+  border: 2px solid var(--qnt-surface) !important;
+  width: 10px !important;
+  height: 10px !important;
+}
